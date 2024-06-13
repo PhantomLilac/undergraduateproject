@@ -1,7 +1,5 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-import arrow
-from fpdf import FPDF
-from datetime import datetime
-import plotly.graph_objects as go
+streamlit==1.35.0
+pandas==2.2.2
+fpdf==1.7.2
+plotly==5.22.0
+arrow==1.3.0
