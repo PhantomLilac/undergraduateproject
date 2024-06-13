@@ -126,11 +126,6 @@ if uploaded_file is not None:
                     fig.update_layout(title=f"{viz_type.capitalize()} of {', '.join(attribute_titles)} over {selected_timestamp}",
                                       xaxis_title=selected_timestamp if selected_timestamp!= 'timestamp' else 'Date and Time',
                                       yaxis_title=', '.join(attribute_titles))
-                    # Add a help button beside the graph title
-                    #help_button = st.button("?", disabled=False,
-                                          #  help="Hover over the line to view the contact number for a specific date.")
-                    #if help_button:
-                       # st.write("Hover over the line to view the contact number for a specific date.")
 
                     # Display the plot
                     st.plotly_chart(fig)
