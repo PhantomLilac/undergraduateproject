@@ -13,15 +13,16 @@
 6) FPDF
 
 # Usage
-1) Access Chronochat Visualizer visualization tool: https://chronochat-visualizer.streamlit.app/
+1) Clone this repository to your local machine. 
 2) Install the required packages using 'pip install -r requirements.txt'
-3) Upload message.csv file that contain WhatsApp chat data (get from dataset folder)
-4) All the data in the CSV file is display in the system.
-5) Choose vizualization type (Line Chart, Scatter PLot, Bar Chart).
-6) Select timestamp and attribute columns for visualization.
-7) Result table shows the result of attributes selected.
-8) Insert title and description for report purposes.   
-9) Generate report in PDF format.
+3) Access Chronochat Visualizer visualization tool: https://chronochat-visualizer.streamlit.app/
+4) Upload message.csv file that contain WhatsApp chat data (get from dataset folder)
+5) All the data in the CSV file is display in the system.
+6) Choose vizualization type (Line Chart, Scatter PLot, Bar Chart).
+7) Select timestamp and attribute columns for visualization.
+8) Result table shows the result of attributes selected.
+9) Insert title and description for report purposes.   
+10) Generate report in PDF format.
 
 # Note
 * The timestamp column in the CSV file should be in epoch format so that the time can be converted to datetime using arrow
