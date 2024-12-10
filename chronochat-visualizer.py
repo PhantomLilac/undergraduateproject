@@ -27,6 +27,27 @@ with st.expander("Note"):
     - need_push: ‘2’ if broadcast message, ‘0’ otherwise
     """)
 
+# Add footer
+def add_footer():
+    st.markdown("""
+        <style>
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #f5f5f5;
+                padding: 10px 0;
+                text-align: center;
+                font-size: small;
+                color: #333;
+            }
+        </style>
+        <div class="footer">
+            © 2024 UTHM- All Rights Reserved .
+        </div>
+    """, unsafe_allow_html=True)
+
 # File uploader to upload WhatsApp chat data CSV file
 uploaded_file = st.file_uploader("Choose a file", type="csv")
 
@@ -169,3 +190,6 @@ if uploaded_file is not None:
         st.error(f"An error occurred while loading the data: {e}")
 else:
     st.warning("Please upload a CSV file to proceed.")
+
+# Call the footer function at the end of the app layout
+add_footer()
